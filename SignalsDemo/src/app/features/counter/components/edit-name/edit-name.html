@@ -1,0 +1,11 @@
+<div class="flex items-center gap-2">
+  @if(!editing) {
+    <button (click)="startEdit()" class="text-sm text-indigo-600 hover:underline">Edit</button>
+  }
+
+  @if(editing) {
+    <input [(ngModel)]="value" class="px-2 py-1 border border-slate-200 rounded-md text-sm" />
+    <button (click)="save()" class="ml-2 px-2 py-1 bg-indigo-600 text-white rounded-md text-sm">Save</button>
+    <button (click)="cancel()" class="ml-1 px-2 py-1 text-sm">Cancel</button>
+  }
+</div>

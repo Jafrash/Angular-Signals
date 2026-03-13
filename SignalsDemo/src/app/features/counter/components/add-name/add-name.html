@@ -1,0 +1,5 @@
+<form class="flex gap-2 items-center" (submit)="addName(name); $event.preventDefault();">
+	<label class="sr-only" for="nameInput">Name</label>
+	<input id="nameInput" name="name" [(ngModel)]="name" class="flex-1 px-3 py-2 border border-slate-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="Enter name" />
+	<button type="submit" class="px-3 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">Add</button>
+</form>
