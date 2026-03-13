@@ -12,7 +12,8 @@ The app currently renders the names module in the main screen and keeps all stat
 
 Add your screenshot file at `public/output-screenshot.png` and it will render below:
 
-![SignalsDemo output](public/output-screenshot.png)
+<img width="1919" height="774" alt="image" src="https://github.com/user-attachments/assets/4db3a23e-1e47-499d-979d-4fb049d9e4a5" />
+
 
 ## Features
 
@@ -62,48 +63,6 @@ Add your screenshot file at `public/output-screenshot.png` and it will render be
 - `show-count` renders the counter value
 - `increment`, `decrement`, `reset` perform counter actions
 
-## Scripts
 
-Use npm scripts from `package.json`:
 
-```bash
-npm start
-npm run build
-npm run watch
-npm test
-```
 
-## Run Locally
-
-1. Install dependencies:
-
-```bash
-npm install
-```
-
-2. Start the dev server:
-
-```bash
-npm start
-```
-
-3. Open:
-
-```text
-http://localhost:4200
-```
-
-## Testing Status
-
-Unit test files exist for most components and services, but most are basic "should create" checks.
-Current improvement opportunities:
-
-- Add behavioral tests for `counter-service` and `names-service`
-- Add a missing spec for `edit-name`
-- Align `app.spec.ts` expectations with the current `app.html` template
-
-## Notes
-
-- State is in-memory only (refresh resets data)
-- Router is configured but routes are not yet used
-- Tailwind is active globally via `src/styles.css`
